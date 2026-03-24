@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Luna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/js/translator.js" defer></script>
+    <script src="/js/website.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="/index.html"><img src="/images/la luna w.png"></a>
+        <input type="checkbox" id="menuToggle" />
+        <label for="menuToggle" class="hamburger">&#9776;</label>
+        <div class="navLinks" id="navLinks">
+            <a class="home" data-i18n="nav.home" href="/index.html"></a>
+            <a data-i18n="nav.menu" href="/menu.html"></a>
+            <a class="openGolf" data-i18n="nav.golf"></a>
+            <a class="podcast" data-i18n="nav.podcast" href="/podcast.html"></a>
+        </div>
+    </nav>
+    <main>
+        <div id="homeHeroBack">
+            <div id="homeHero">
+                <img src="/images/la luna w.png">
+                <p class="herop" data-i18n="homeHerop"></p>
+                <a href="/menu.html"><button class="bigButton" data-i18n="menuButton"></button></a>
+            </div>
+        </div>
+        <div id="langSelector">
+            <img id="flagImg" src="/images/no.png" alt="language flag">
+            <button id="languageSwitcher" onchange="changeFlag()" data-i18n="selector.title"></button>
+            <div class="selectHide" id="langOptions">
+                <div id="no" class="option" value="no" data-i18n="selector.no"></div>
+                <div id="en" class="option" value="en" data-i18n="selector.en"></div>
+                <!--<div id="es" class="option" value="es" data-i18n="selector.es"></div> -->
+            </div>
+        </div>
+        <div id="aboutSec">
+            <div>
+                <h2 data-i18n="about.title"></h2>
+                <p data-i18n="about.p"></p>
+                <a href="/menu.html"><button class="smallButton" data-i18n="menuButton"></button></a>
+            </div>
+            <img id="aboutImg" src="/images/profile.jpg" alt="Image of owner">
+        </div>
+        <div id="fasadeImg"></div>
+        <div id="activitySec">
+            <div class="activity">
+                <img src="/images/event.png" alt="Table decorated for 17 May">
+                <div id="openEvent">
+                    <h3 data-i18n="event.title"></h3>
+                    <p data-i18n="event.p"></p>
+                </div>
+            </div>
+            <div class="activity">
+                <img src="/images/salong.jpg" alt="Image of the salon">
+                <div id="openQuiz">
+                    <h3 data-i18n="quiz.title"></h3>
+                    <p data-i18n="quiz.p"></p>
+                </div>
+            </div>
+        </div>
+        <div id="golf">
+            <div>
+                <h2 data-i18n="golf.title"></h2>
+                <p data-i18n="golf.p"></p>
+                <button class="smallButton openGolf" data-i18n="golf.button"></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="fContact">
+            <a href="/index.html"><img src="/images/la luna w.png"></a>
+            <p class="lineBreak detailp" data-i18n="footer.address"></p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/LaLunaLasMimosas" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/la_luna_restaurante/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://wa.me/0034650049726" target="_blank" class="fa fa-whatsapp"></a>
+            </div>
+        </div>
+        <div id="fMenu">
+            <a data-i18n="nav.home" href="/index.html"></a>
+            <a data-i18n="nav.menu" href="/menu.html"></a>
+            <a class="openGolf" data-i18n="nav.golf"></a>
+            <a data-i18n="nav.podcast" href="/podcast.html"></a>
+        </div>
+        <div>
+            <h4 data-i18n="footer.opening.title"></h4>
+            <p class="lineBreak" data-i18n="footer.opening.1"></p>
+            <p class="lineBreak" data-i18n="footer.opening.2"></p>
+            <p class="lineBreak" data-i18n="footer.opening.3"></p>
+        </div>
+    </footer>
+    <dialog id="golfOverlay" class="overlay">
+        <div id="golfImg">
+            <img src="/images/lalunaGolfLogo.png" alt="La Luna logo">
+            <div class="x">&times;</div>
+        </div>
+        <div class="contentBox">
+            <h3 data-i18n="golfOverlay.h3"></h3>
+            <p data-i18n="golfOverlay.p"></p>
+        </div>
+    </dialog>
+    <dialog id="eventOverlay" class="overlay">
+        <div id="eventImg">
+            <div class="x">&times;</div>
+        </div>
+        <div class="contentBox">
+            <h3 data-i18n="eventOverlay.h3"></h3>
+            <p data-i18n="eventOverlay.p"></p>
+        </div>
+    </dialog>
+    <dialog id="quizOverlay" class="overlay">
+        <div id="quizImg">
+            <div class="x">&times;</div>
+        </div>
+        <div class="contentBox">
+            <h3 data-i18n="quizOverlay.h3"></h3>
+            <p data-i18n="quizOverlay.p"></p>
+        </div>
+    </dialog>
+</body>
+</html>

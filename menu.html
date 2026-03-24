@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="menuPageTitle"></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/js/translator.js" defer></script>
+    <script src="/js/website.js" defer></script>
+</head>
+<body>
+    <nav class="menuAlt">
+        <a href="/index.html"><img src="/images/la luna g.png"></a>
+        <input type="checkbox" id="menuToggle" />
+        <label for="menuToggle" class="hamburger hamburgerAlt">&#9776;</label>
+        <div class="navLinks menuAlt" id="navLinks">
+            <a class="home" data-i18n="nav.home" href="/index.html"></a>
+            <a data-i18n="nav.menu" href="/menu.html"></a>
+            <a class="openGolf" data-i18n="nav.golf"></a>
+            <a class="podcast" data-i18n="nav.podcast" href="/podcast.html"></a>
+        </div>
+    </nav>
+    <main>
+        <div id="menuHero">
+            <h1 data-i18n="menuh1"></h1>
+            <button id="openCategory" class="CategoryButton" data-i18n="category"></button>
+            <div id="openingHours">
+                <p data-i18n="footer.opening.1"></p>
+                <p class="lineBreak" data-i18n="footer.opening.2"></p>
+                <p class="lineBreak" data-i18n="footer.opening.3"></p>
+            </div>
+        </div>
+        <a ef="#menuHero"><div id="scrollTop"></div></a>
+        <div id="langSelector">
+            <img id="flagImg" src="/images/no.png" alt="language flag">
+            <button id="languageSwitcher" onchange="changeFlag()" data-i18n="selector.title"></button>
+            <div class="selectHide" id="langOptions">
+                <div id="no" class="option" value="no" data-i18n="selector.no"></div>
+                <div id="en" class="option" value="en" data-i18n="selector.en"></div>
+                <div id="es" class="option" value="es" data-i18n="selector.es"></div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="menuSec" id="lunch">
+                <h2 data-i18n="lunchTitle"></h2>
+                <p class="detailp">12:00 - 17:00</p>
+                <hr>
+                <div class="menuItems" >
+                    <div class="menuItem">
+                        <h3 data-i18n="lunch.1.h"></h3>
+                        <p></p>
+                        <p data-i18n="lunch.1.p1"></p>
+                        <p class="euro" data-i18n="lunch.1.e1"></p>
+                        <p data-i18n="lunch.1.p2"></p>
+                        <p class="euro" data-i18n="lunch.1.e2"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="lunch.2.h"></h3>
+                        <p class="euro" data-i18n="lunch.2.e"></p>
+                        <p data-i18n="lunch.2.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="lunch.3.h"></h3>
+                        <p class="euro" data-i18n="lunch.3.e"></p>
+                        <p data-i18n="lunch.3.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="lunch.4.h"></h3>
+                        <p class="euro" data-i18n="lunch.4.e"></p>
+                        <p data-i18n="lunch.4.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="lunch.5.h"></h3>
+                        <p class="euro" data-i18n="lunch.5.e"></p>
+                        <p data-i18n="lunch.5.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="lunch.6.h"></h3>
+                        <p class="euro" data-i18n="lunch.6.e"></p>
+                        <p data-i18n="lunch.6.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="lunch.7.h"></h3>
+                        <p class="euro" data-i18n="lunch.7.e"></p>
+                        <p data-i18n="lunch.7.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="lunch.8.h"></h3>
+                        <p class="euro" data-i18n="lunch.8.e"></p>
+                        <p data-i18n="lunch.8.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="lunch.9.h"></h3>
+                        <p class="euro" data-i18n="lunch.9.e"></p>
+                        <p data-i18n="lunch.9.p"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="menuSec" id="sandwich">
+                <h2 data-i18n="sandwichTitle"></h2>
+                <hr>
+                <div class="menuItems">
+                    <div class="menuItem">
+                        <h3 data-i18n="sandwich.1.h"></h3>
+                        <p class="euro" data-i18n="sandwich.1.e"></p>
+                        <p data-i18n="sandwich.1.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="sandwich.2.h"></h3>
+                        <p class="euro" data-i18n="sandwich.2.e"></p>
+                        <p data-i18n="sandwich.2.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="sandwich.3.h"></h3>
+                        <p class="euro" data-i18n="sandwich.3.e"></p>
+                        <p data-i18n="sandwich.3.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="sandwich.4.h"></h3>
+                        <p class="euro" data-i18n="sandwich.4.e"></p>
+                        <p data-i18n="sandwich.4.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="sandwich.5.h"></h3>
+                        <p class="euro" data-i18n="sandwich.5.e"></p>
+                        <p data-i18n="sandwich.5.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="sandwich.6.h"></h3>
+                        <p class="euro" data-i18n="sandwich.6.e"></p>
+                        <p data-i18n="sandwich.6.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="sandwich.7.h"></h3>
+                        <p class="euro" data-i18n="sandwich.7.e"></p>
+                        <p data-i18n="sandwich.7.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="sandwich.8.h"></h3>
+                        <p class="euro" data-i18n="sandwich.8.e"></p>
+                        <div>
+                            <p data-i18n="sandwich.8.p1"></p>
+                            <div class="space"></div>
+                            <p class="bold" data-i18n="sandwich.8.p2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuSec" id="starter">
+                <h2 data-i18n="starterTitle"></h2>
+                <hr>
+                <div class="menuItems">
+                    <div class="menuItem">
+                        <h3 data-i18n="starter.1.h"></h3>
+                        <p class="euro" data-i18n="starter.1.e"></p>
+                        <p data-i18n="starter.1.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="starter.2.h"></h3>
+                        <p class="euro" data-i18n="starter.2.e"></p>
+                        <p data-i18n="starter.2.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="lunch.1.h"></h3>
+                        <p></p>
+                        <p data-i18n="lunch.1.p1"></p>
+                        <p class="euro" data-i18n="lunch.1.e1"></p>
+                        <p data-i18n="lunch.1.p2"></p>
+                        <p class="euro" data-i18n="lunch.1.e2"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="starter.4.h"></h3>
+                        <p class="euro" data-i18n="starter.4.e"></p>
+                        <p data-i18n="starter.4.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="starter.5.h"></h3>
+                        <p class="euro" data-i18n="starter.5.e"></p>
+                        <p data-i18n="starter.5.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="starter.6.h"></h3>
+                        <p class="euro" data-i18n="starter.6.e"></p>
+                        <p data-i18n="starter.6.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="starter.7.h"></h3>
+                        <p class="euro" data-i18n="starter.7.e"></p>
+                        <p data-i18n="starter.7.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="starter.8.h"></h3>
+                        <p class="euro" data-i18n="starter.8.e"></p>
+                        <p data-i18n="starter.8.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="starter.9.h"></h3>
+                        <p class="euro" data-i18n="starter.9.e"></p>
+                        <p data-i18n="starter.9.p"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="menuSec" id="meat">
+                <h2 data-i18n="meatTitle"></h2>
+                <hr>
+                <div class="menuItems">
+                    <div>
+                        <div class="menuItem">
+                            <h3 data-i18n="meat.1.h"></h3>
+                            <p class="euro" data-i18n="meat.1.e"></p>
+                            <div>
+                                <p data-i18n="meat.1.p1"></p>
+                                <div class="space"></div>
+                                <p data-i18n="meat.1.p2"></p>
+                                <div class="space"></div>
+                                <p data-i18n="meat.1.p3"></p>
+                            </div>
+                        </div>
+                        <div class="menuItem extraItem">
+                            <p data-i18n="meat.3.h"></p>
+                            <p></p>
+                            <p data-i18n="meat.3.p1"></p>
+                            <p class="euro" data-i18n="meat.3.e1"></p>
+                            <p data-i18n="meat.3.p2"></p>
+                            <p class="euro" data-i18n="meat.3.e2"></p>
+                        </div>
+                        <div class="menuItem">
+                            <h3 data-i18n="meat.5.h"></h3>
+                            <p class="euro lineBreak" data-i18n="meat.5.e"></p>
+                            <div>
+                                <p data-i18n="meat.5.p1"></p>
+                                <div class="space"></div>
+                                <p data-i18n="meat.5.p2"></p>
+                                <div class="space"></div>
+                                <p data-i18n="meat.5.p3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="menuItem meatItem">
+                            <h3 data-i18n="meat.2.h"></h3>
+                            <p class="euro" data-i18n="meat.2.e"></p>
+                            <p data-i18n="meat.2.p"></p>
+                        </div>
+                        <div class="menuItem meatItem">
+                            <h3 data-i18n="meat.4.h"></h3>
+                            <p class="euro" data-i18n="meat.4.e"></p>
+                            <p data-i18n="meat.4.p"></p>
+                        </div>
+                        <div class="menuItem meatItem">
+                            <h3 data-i18n="meat.6.h"></h3>
+                            <p class="euro" data-i18n="meat.6.e"></p>
+                            <p data-i18n="meat.6.p"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuSec" id="fish">
+                <h2 data-i18n="fishTitle"></h2>
+                <hr>
+                <div class="menuItems">
+                    <div class="menuItem">
+                        <h3 data-i18n="fish.1.h"></h3>
+                        <p class="euro" data-i18n="fish.1.e"></p>
+                        <p data-i18n="fish.1.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="fish.2.h"></h3>
+                        <p class="euro" data-i18n="fish.2.e"></p>
+                        <p data-i18n="fish.2.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="fish.3.h"></h3>
+                        <p class="euro" data-i18n="fish.3.e"></p>
+                        <div>
+                            <p data-i18n="fish.3.p"></p>
+                        </div>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="fish.4.h"></h3>
+                        <p class="euro" data-i18n="fish.4.e"></p>
+                        <div>
+                            <p data-i18n="fish.4.p"></p>
+                        </div>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="fish.5.h"></h3>
+                        <p class="euro" data-i18n="fish.5.e1"></p>
+                        <div>
+                            <p data-i18n="fish.5.p1"></p>
+                            <p data-i18n="fish.5.p2"></p>
+                        </div>
+                        <div class="space"></div>
+                        <div class="space"></div>
+                        <div class="space"></div>
+                        <p data-i18n="fish.5.p3"></p>
+                        <p class="euro" data-i18n="fish.5.e2"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="menuSec" id="dessert">
+                <h2 data-i18n="dessertTitle"></h2>
+                <hr>
+                <div class="menuItems">
+                    <div class="menuItem">
+                        <h3 data-i18n="dessert.1.h"></h3>
+                        <p class="euro" data-i18n="dessert.1.e"></p>
+                        <p data-i18n="dessert.1.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="dessert.2.h"></h3>
+                        <p class="euro" data-i18n="dessert.2.e"></p>
+                        <p data-i18n="dessert.2.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="dessert.3.h"></h3>
+                        <p class="euro" data-i18n="dessert.3.e"></p>
+                        <p data-i18n="dessert.3.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="dessert.4.h"></h3>
+                        <p class="euro" data-i18n="dessert.4.e"></p>
+                        <p data-i18n="dessert.4.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="dessert.5.h"></h3>
+                        <p class="euro" data-i18n="dessert.5.e"></p>
+                        <p data-i18n="dessert.5.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="dessert.6.h"></h3>
+                        <p class="euro" data-i18n="dessert.6.e"></p>
+                        <p data-i18n="dessert.6.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="dessert.7.h"></h3>
+                        <p class="euro" data-i18n="dessert.7.e"></p>
+                        <p data-i18n="dessert.7.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="dessert.8.h"></h3>
+                        <p class="euro" data-i18n="dessert.8.e"></p>
+                        <p data-i18n="dessert.8.p"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="menuSec" id="coffee">
+                <h2 data-i18n="coffeeTitle"></h2>
+                <hr>
+                <div class="menuItems">
+                    <div class="menuItem">
+                        <h3 data-i18n="coffee.1.h"></h3>
+                        <p class="euro" data-i18n="coffee.1.e"></p>
+                        <p data-i18n="coffee.1.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="coffee.2.h"></h3>
+                        <p class="euro" data-i18n="coffee.2.e"></p>
+                        <p data-i18n="coffee.2.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="coffee.3.h"></h3>
+                        <p class="euro" data-i18n="coffee.3.e"></p>
+                        <p data-i18n="coffee.3.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="coffee.4.h"></h3>
+                        <p class="euro" data-i18n="coffee.4.e"></p>
+                        <p data-i18n="coffee.4.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="coffee.5.h"></h3>
+                        <p class="euro" data-i18n="coffee.5.e"></p>
+                        <p data-i18n="coffee.5.p"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="menuSec" id="drinks">
+                <h2 data-i18n="drinksTitle"></h2>
+                <hr>
+                <div class="menuItems" >
+                    <div class="menuItem">
+                        <h3 data-i18n="drinks.1.h"></h3>
+                        <p></p>
+                        <p data-i18n="drinks.1.p1"></p>
+                        <p class="euro" data-i18n="drinks.1.e1"></p>
+                        <p data-i18n="drinks.1.p2"></p>
+                        <p class="euro" data-i18n="drinks.1.e2"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="drinks.2.h"></h3>
+                        <p></p>
+                        <p data-i18n="drinks.2.p1"></p>
+                        <p class="euro" data-i18n="drinks.2.e1"></p>
+                        <p data-i18n="drinks.2.p2"></p>
+                        <p class="euro" data-i18n="drinks.2.e2"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="drinks.3.h"></h3>
+                        <p class="euro" data-i18n="drinks.3.e"></p>
+                        <p data-i18n="drinks.3.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="drinks.4.h"></h3>
+                        <p class="euro" data-i18n="drinks.4.e"></p>
+                        <p data-i18n="drinks.4.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="drinks.5.h"></h3>
+                        <p class="euro" data-i18n="drinks.5.e"></p>
+                        <p data-i18n="drinks.5.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="drinks.6.h"></h3>
+                        <p class="euro" data-i18n="drinks.6.e"></p>
+                        <p data-i18n="drinks.6.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="drinks.7.h"></h3>
+                        <p class="euro" data-i18n="drinks.7.e"></p>
+                        <p data-i18n="drinks.7.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="drinks.8.h"></h3>
+                        <p class="euro" data-i18n="drinks.8.e"></p>
+                        <p data-i18n="drinks.8.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="drinks.9.h"></h3>
+                        <p class="euro" data-i18n="drinks.9.e"></p>
+                        <p data-i18n="drinks.9.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="drinks.10.h"></h3>
+                        <p class="euro" data-i18n="drinks.10.e"></p>
+                        <p data-i18n="drinks.10.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="drinks.11.h"></h3>
+                        <p class="euro" data-i18n="drinks.11.e"></p>
+                        <p data-i18n="drinks.11.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="drinks.12.h"></h3>
+                        <p class="euro" data-i18n="drinks.12.e"></p>
+                        <p data-i18n="drinks.12.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="coffee.5.h"></h3>
+                        <p class="euro" data-i18n="coffee.5.e"></p>
+                        <p data-i18n="coffee.5.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="coffee.1.h"></h3>
+                        <p class="euro" data-i18n="coffee.1.e"></p>
+                        <p data-i18n="coffee.1.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="coffee.2.h"></h3>
+                        <p class="euro" data-i18n="coffee.2.e"></p>
+                        <p data-i18n="coffee.2.p"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="coffee.3.h"></h3>
+                        <p class="euro" data-i18n="coffee.3.e"></p>
+                        <p data-i18n="coffee.3.p"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="menuSec" id="gin">
+                <h2 data-i18n="ginTitle"></h2>
+                <hr>
+                <div class="menuItems">
+                    <div class="menuItem">
+                        <h3 data-i18n="gin.1.h"></h3>
+                        <p class="euro" data-i18n="gin.1.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="gin.2.h"></h3>
+                        <p class="euro" data-i18n="gin.2.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="gin.3.h"></h3>
+                        <p class="euro" data-i18n="gin.3.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="gin.3.h"></h3>
+                        <p class="euro" data-i18n="gin.3.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="gin.4.h"></h3>
+                        <p class="euro" data-i18n="gin.4.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="gin.5.h"></h3>
+                        <p class="euro" data-i18n="gin.5.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="gin.6.h"></h3>
+                        <p class="euro" data-i18n="gin.6.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="gin.7.h"></h3>
+                        <p class="euro" data-i18n="gin.7.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="gin.8.h"></h3>
+                        <p class="euro" data-i18n="gin.8.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="gin.9.h"></h3>
+                        <p class="euro" data-i18n="gin.9.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="gin.10.h"></h3>
+                        <p class="euro" data-i18n="gin.10.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="gin.11.h"></h3>
+                        <p class="euro" data-i18n="gin.11.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="gin.12.h"></h3>
+                        <p class="euro" data-i18n="gin.12.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="gin.13.h"></h3>
+                        <p class="euro" data-i18n="gin.13.e"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="menuSec finalMenu" id="tonic">
+                <h2 data-i18n="tonicTitle"></h2>
+                <hr>
+                <div class="menuItems">
+                    <div class="menuItem">
+                        <h3 data-i18n="tonic.1.h"></h3>
+                        <p class="euro" data-i18n="tonic.1.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="tonic.2.h"></h3>
+                        <p class="euro" data-i18n="tonic.2.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="tonic.3.h"></h3>
+                        <p class="euro" data-i18n="tonic.3.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="tonic.4.h"></h3>
+                        <p class="euro" data-i18n="tonic.4.e"></p>
+                    </div>
+                    <div class="menuItem">
+                        <h3 data-i18n="tonic.5.h"></h3>
+                        <p class="euro" data-i18n="tonic.5.e"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="menuAlt">
+        <div id="fContact">
+            <a href="/index.html"><img src="/images/la luna g.png"></a>
+            <p class="lineBreak detailp" data-i18n="footer.address"></p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/LaLunaLasMimosas" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/la_luna_restaurante/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://wa.me/0034650049726" target="_blank" class="fa fa-whatsapp"></a>
+            </div>
+        </div>
+        <div id="fMenu">
+            <a data-i18n="nav.home" href="/index.html"></a>
+            <a data-i18n="nav.menu" href="/menu.html"></a>
+            <a class="openGolf" data-i18n="nav.golf"></a>
+            <a data-i18n="nav.podcast" href="/podcast.html"></a>
+        </div>
+        <div>
+            <h4 data-i18n="footer.opening.title"></h4>
+            <p class="lineBreak" data-i18n="footer.opening.1"></p>
+            <p class="lineBreak" data-i18n="footer.opening.2"></p>
+            <p class="lineBreak" data-i18n="footer.opening.3"></p>
+        </div>
+    </footer>
+    <dialog id="golfOverlay" class="overlay">
+        <div id="golfImg">
+            <img src="/images/lalunaGolfLogo.png" alt="La Luna logo">
+            <div class="x">&times;</div>
+        </div>
+        <div class="contentBox">
+            <h3 data-i18n="golfOverlay.h3"></h3>
+            <p data-i18n="golfOverlay.p"></p>
+        </div>
+    </dialog>
+    <dialog id="categoryOverlay" class="overlay">
+        <div class="x">&times;</div>
+        <div class="categoryItems">
+            <a href="#lunch" class="close"><h3 class="categoryItem" data-i18n="categoryItem.1"></h3></a>
+            <a href="#sandwich" class="close"><h3 class="categoryItem" data-i18n="categoryItem.2"></h3></a>
+            <a href="#starter" class="close"><h3 class="categoryItem" data-i18n="categoryItem.3"></h3></a>
+            <a href="#meat" class="close"><h3 class="categoryItem" data-i18n="categoryItem.4"></h3></a>
+            <a href="#fish" class="close"><h3 class="categoryItem" data-i18n="categoryItem.5"></h3></a>
+            <a href="#dessert" class="close"><h3 class="categoryItem" data-i18n="categoryItem.6"></h3></a>
+            <a href="#coffee" class="close"><h3 class="categoryItem" data-i18n="categoryItem.7"></h3></a>
+            <a href="#drinks" class="close"><h3 class="categoryItem" data-i18n="categoryItem.8"></h3></a>
+            <a href="#gin" class="close"><h3 class="categoryItem" data-i18n="categoryItem.9"></h3></a>
+            <a href="#tonic" class="close"><h3 class="categoryItem" data-i18n="categoryItem.10"></h3></a>
+            <br>
+        </div>
+    </dialog>
+</body>
+</html>

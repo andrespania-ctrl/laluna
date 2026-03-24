@@ -1,0 +1,535 @@
+{
+    "menuPageTitle": "Menu",
+
+    "nav": {
+        "home": "Home",
+        "menu": "Menu",
+        "golf": "Golf",
+        "podcast": "Podcast"
+    },
+
+    "homeHerop": "We strive to always provide good food and a pleasant atmosphere",
+    "menuButton": "Menu",
+
+    "selector": {
+        "title": "English",
+        "no": "Norwegian",
+        "en": "English",
+        "es": "Spanish"
+    },
+
+    "about":{
+        "title": "About La Luna",
+        "p": "We are a Norwegian restaurant, with a primarily Nordic kitchen that has been running here for over 20 years. Curious? Feel free to have a look at our menu, and we would like to wish everyone welcome."
+    }, 
+
+    "event": {
+        "title": "Events",
+        "p": "Throughout the year we hold a variety of different events."
+    },
+
+    "quiz": {
+        "title": "Quiz",
+        "p": "Evey Tuesday we run a quiz, and everyone is welcome to join."
+    },
+
+    "golf": {
+        "title": "Golf",
+        "p":"Here at La Luna we love a good game of golf, so if you are looking for someone to play with feel free to get in touch and join us.",
+        "button": "Learn More"
+    },
+
+    "footer": {
+        "address": "C. de la Garza 28, \n03189 Orihuela, \nAlicante, Spain",
+        "opening": {
+            "title": "Opening Hours",
+            "1": "Monday Closed",
+            "2": "Tuesday to Sunday \n12:00 – 23:00",
+            "3": "Kitchen closed \n22:00"
+        }
+    },
+
+    "golfOverlay": {
+        "h3": "Golf",
+        "p": "Here at La Luna Golf Society we play every Wednesday, and all HCPs are welcome. \n\nWe are a group of Norwegians who enjoy ourselves with a good game of golf and build a social network together at the same time. When we have finished playing, head up to La Luna for dinner, and everyone is welcome to bring an extra guest to dinner with them. \n\nIf this sounds like fun, just get in touch by calling Irene directly at +34 650 049 726 or come by the restaurant. Registration and payment must be made no later than the Sunday before we play."
+    },
+
+    "eventOverlay": {
+        "h3": "Events",
+        "p": "Throughout the year we have a variety of different events, and some examples of events we hosted in previous years are shrimp evenings, Norwegian national dinner day (sheep and cabbage), May 17 (Norwegian national day) and Christmas Eve. For future events, just keep an eye on Facebook where all information about various events is updated. \n\nIf you have a special occasion to celebrate such as a birthday, wedding, or an occasion to gather a large group, just get in touch with us by phone +34 650 049 726 or come by in advance. We love to organize a great day for our guests."
+    },
+
+    "quizOverlay": {
+        "h3": "Quiz",
+        "p": "We organize Quiz every Tuesday at 20:00. Feel free to come by between 18-19:00 to get some food before we start. \n\nRegistration takes place when you arrive, right before we start and costs 3€ per person, all proceeds from the quiz go to charity."
+    },
+
+    "podcastPageTitle": "Podcast",
+
+    "podcastText": "A podcast made by Norwegians for Norwegians. We talk about all sorts of information that might be nice to know about life here in Spain.",
+
+    "menuh1": "Menu",
+
+    "category": "Category",
+
+    "categoryItem": {
+        "1": "Lunch",
+        "2": "Sandwiches",
+        "3": "Starters",
+        "4": "Meat",
+        "5": "Fish",
+        "6": "Desserts",
+        "7": "Coffee",
+        "8": "Cocktails",
+        "9": "Spirits",
+        "10": "Mixers"
+    },
+
+    "lunchTitle": "Lunch",
+
+    "lunch": {
+        "1": {
+            "h": "Our famous fish soup",
+            "p1": "Regular ",
+            "e1": "9.50",
+            "p2": "Large",
+            "e2": "15.00"
+        },
+        "2": {
+            "h": "Bread",
+            "e": "4.00",
+            "p": "With aioli and grated tomato in oil"
+        },
+        "3": {
+            "h": "Garlic prawns in oil",
+            "e": "12.50",
+            "p": "With bread"
+        },
+        "4": {
+            "h": "Chicken salad",
+            "e": "15.00",
+            "p": "With chicken, avocado, red onion, beans and carrots"
+        },
+        "5": {
+            "h": "House salad",
+            "e": "15.00",
+            "p": "With egg,avocado, salmon, sweet corn and onion"
+        },
+        "6": {
+            "h": "Angus burger",
+            "e": "13.00",
+            "p": "With cheese, bacon, onion, lettuce,tomato and fries"
+        },
+        "7": {
+            "h": "Nachos",
+            "e": "13.50",
+            "p": "With jalapeño, tomato, cheese and mincemeat"
+        },
+        "8": {
+            "h": "Lasagne",
+            "e": "12.00",
+            "p": "With garlic bread and crème fraîche"
+        },
+        "9": {
+            "h": "Pasta carbonara",
+            "e": "14.00",
+            "p": "Med bread, parmesan and bacon"
+        }
+    },
+
+    "sandwichTitle": "Sandwiches",
+
+    "sandwich": {
+        "1": {
+            "h": "Meat patty sandwich",
+            "e": "8.50",
+            "p": "With egg, onion, tomato and pickels"
+        },
+        "2": {
+            "h": "Shrimp sandwich",
+            "e": "11.50",
+            "p": "With egg and mayonnaise"
+        },
+        "3": {
+            "h": "Salmon sandwich",
+            "e": "9.50",
+            "p": "With scramble eggs"
+        },
+        "4": {
+            "h": "Avocado sandwich",
+            "e": "8.00",
+            "p": "With egg and bacon"
+        },
+        "5": {
+            "h": "Egg benedict sandwich",
+            "e": "9.00",
+            "p": "With salmon, avocado and hollandaise gravy"
+        },
+        "6": {
+            "h": "Egg and bacon sandwich",
+            "e": "9.00",
+            "p": "With avocado"
+        },
+        "7": {
+            "h": "Herring plate",
+            "e": "16.00",
+            "p": "with three different herrings,bread, egg,potato and  crème fraîche"
+        },
+        "8": {
+            "h": "Poke bowle",
+            "e": "13.50",
+            "p1": "With rice, pineapple, onion, tomato,avocado, egg and mango",
+            "p2": "**Choose between:** prawns, smoked salmon or chicken"
+        }
+    },
+
+    "starterTitle": "Starters",
+
+    "starter": {
+        "1": {
+            "h": "Toasted bread",
+            "e": "4.00",
+            "p": "With aioli and grated tomato in oil"
+        },
+        "2": {
+            "h": "French onionsoup",
+            "e": "6.00",
+            "p": ""
+        },
+        "4": {
+            "h": "Garlic prawns",
+            "e": "12.50",
+            "p": "With bread"
+        },
+        "5": {
+            "h": "Shrimp cocktail",
+            "e": "9.00",
+            "p": "With bread"
+        },
+        "6": {
+            "h": "Mussels",
+            "e": "12.00",
+            "p": "With lobster gravy and bread"
+        },
+        "7": {
+            "h": "Bruschetta",
+            "e": "8.00",
+            "p": "With tomato, onion and parmesan"
+        },
+        "8": {
+            "h": "Mozzarella and tomato",
+            "e": "8.50",
+            "p": ""
+        },
+        "9": {
+            "h": "Pate and serrano ham",
+            "e": "9.00",
+            "p": "With bread and jam"
+        }
+    },
+
+    "meatTitle": "Meat",
+
+    "meat": {
+        "1": {
+            "h": "Fillet of spanish beef",
+            "e": "28.00",
+            "p1": "250 grams of angus with vegetables and your choice of potatoes and gravy",
+            "p2": "**Choice of potatoes:** garlicpotatoes, bakedpotato, fries, sweetpotato fries, boiled potato",
+            "p3": "**Choice of gravy:** peppercorn sauce, Whisky sauce, mushroom gravy"
+        },
+        "2": {
+            "h": "Spareribs",
+            "e": "18.00",
+            "p": "BBQ marinated with italian salad, spicy potatos"
+        },
+        "3": {
+            "h": "**Extra:**",
+            "p1": "Potatos",
+            "e1": "3.50",
+            "p2": "Gravy",
+            "e2": "3.00"
+        },
+        "4": {
+            "h": "Lamb shank",
+            "e": "19.50",
+            "p": "With vegetables, sauce, mash"
+        },
+        "5": {
+            "h": "Sharing platter for two",
+            "e": "36.00 \nPer pers",
+            "p1": "Whole roasted tenderloin of spanish angus 500-600g",
+            "p2": "With two to three potato variants, two types of gravy and vegetables",
+            "p3": "**Pre order required**"
+        },
+        "6": {
+            "h": "Porkfillet",
+            "e": "17.00",
+            "p": "With vegetables, peppercorn sauce, spicy potatos"
+        }
+    },
+
+    "fishTitle": "Fish",
+
+    "fish": {
+        "1": {
+            "h": "Fried salmon",
+            "e": "18.50",
+            "p": "With boiled potato, vegetables and butter sauce"
+        },
+        "2": {
+            "h": "Spanish boneless hake",
+            "e": "18.00",
+            "p": "With mash, bacon and carrots"
+        },
+        "3": {
+            "h": "Poached cod",
+            "e": "19.50",
+            "p": "With bacon, vegtables and mash"
+        },
+        "4": {
+            "h": "Spanish flounder fillet",
+            "e": "17.00",
+            "p": "With potato and lobster gravy"
+        },
+        "5": {
+            "h": "Spaghetti",
+            "e1": "14.00",
+            "p1": "With fresh garlic, chilli and sweet chilli sauce",
+            "p2": "**Choice of:** chickon or prawns",
+            "p3": "Garlic bread",
+            "e2": "1.50"
+        }
+    },
+
+    "dessertTitle": "Dessert",
+
+    "dessert": {
+        "1": {
+            "h": "Crème Brûlée",
+            "e": "6.90",
+            "p": "With fruit"
+        },
+        "2": {
+            "h": "House special tiramisu",
+            "e": "8.00",
+            "p": ""
+        },
+        "3": {
+            "h": "Warm blueberrys",
+            "e": "5.90",
+            "p": "With vanilla ice cream"
+        },
+        "4": {
+            "h": "Apple cake",
+            "e": "5.90",
+            "p": "With vanilla ice cream"
+        },
+        "5": {
+            "h": "Lemon sorbet",
+            "e": "5.90",
+            "p": "With fruit"
+        },
+        "6": {
+            "h": "Mango sorbet",
+            "e": "5.90",
+            "p": "With fruit"
+        },
+        "7": {
+            "h": "Ice cream",
+            "e": "5.90",
+            "p": "two scoops of vanilla ice cream with chocolate sauce"
+        },
+        "8": {
+            "h": "Crêpe",
+            "e": "5.90",
+            "p": "With vanilla ice cream"
+        }
+    },
+
+    "coffeeTitle": "Coffee",
+
+    "coffee": {
+        "1": {
+            "h": "Irish coffee",
+            "e": "7.00",
+            "p": "Coffee, whiskey and cream"
+        },
+        "2": {
+            "h": "Lenas coffee",
+            "e": "8.00",
+            "p": "Coffee, baileys, cointreau, milk and cinnamon"
+        },
+        "3": {
+            "h": "Baileys coffee",
+            "e": "8.00",
+            "p": "Coffee, baileys and cream"
+        },
+        "4": {
+            "h": "Calypso coffee",
+            "e": "8.00",
+            "p": "Coffee, tia maria and cream"
+        },
+        "5": {
+            "h": "Espresso martini",
+            "e": "8.00",
+            "p": "Coffee, vodka, kahlua and sugar liquor"
+        }
+    },
+
+    "drinksTitle": "Cocktails",
+
+    "drinks": {
+        "1": {
+            "h": "Red sangria",
+            "p1": "Glass",
+            "e1": "6.00",
+            "p2": "Jug",
+            "e2": "15.00"
+        },
+        "2": {
+            "h": "White sangria",
+            "p1": "Glass",
+            "e1": "6.00",
+            "p2": "Jug",
+            "e2": "15.00"
+        },
+        "3": {
+            "h": "Piña colada",
+            "e": "8.00",
+            "p": "Rum, coconut cream and pineapple juice"
+        },
+        "4": {
+            "h": "Mimosa",
+            "e": "5.00",
+            "p": "Prosecco and orange juice"
+        },
+        "5": {
+            "h": "Aperol Spritz",
+            "e": "8.00",
+            "p": "Aperol, cava and sprite"
+        },
+        "6": {
+            "h": "Limoncello Spritz",
+            "e": "8.00",
+            "p": "Limoncello, cava and sprite"
+        },
+        "7": {
+            "h": "Mexican mule",
+            "e": "8.00",
+            "p": "Tequila, lime and ginger beer"
+        },
+        "8": {
+            "h": "Strawberry mojito",
+            "e": "8.00",
+            "p": "White rum, tripple sec, mint, cava and strawberry"
+        },
+        "9": {
+            "h": "Porn star martini",
+            "e": "8.50",
+            "p": "Prosecco, vanilla vodka, passion fruit, pineapple juice and sugar syrup"
+        },
+        "10": {
+            "h": "Frozen baileys",
+            "e": "8.00",
+            "p": "Vodka, baileys and chocolate"
+        },
+        "11": {
+            "h": "Mojito",
+            "e": "7.00",
+            "p": "White rum, mint, sugar, lime juice and sprite"
+        },
+        "12": {
+            "h": "Strawberry daiqyiri",
+            "e": "8.00",
+            "p": "Rum, strawberry liqueur, sugar and sprite"
+        }
+    },
+
+    "ginTitle": "Spirits",
+
+    "gin": {
+        "1": {
+            "h": "Larios",
+            "e": "5.00"
+        },
+        "2": {
+            "h": "Bombay saphire",
+            "e": "7.00"
+        },
+        "3": {
+            "h": "Gordon`s dry",
+            "e": "5.00"
+        },
+        "4": {
+            "h": "Tanqueray dry",
+            "e": "8.00"
+        },
+        "5": {
+            "h": "Pink",
+            "e": "6.50"
+        },
+        "6": {
+            "h": "Hendrick`s",
+            "e": "9.00"
+        },
+        "7": {
+            "h": "Blue",
+            "e": "6.50"
+        },
+        "8": {
+            "h": "Brockman`s",
+            "e": "10.00"
+        },
+        "9": {
+            "h": "London",
+            "e": "6.00"
+        },
+        "10": {
+            "h": "Bulldog",
+            "e": "8.00"
+        },
+        "11": {
+            "h": "Beefeater dry",
+            "e": "5.50"
+        },
+        "12": {
+            "h": "Bacardi",
+            "e": "5.00"
+        },
+        "13": {
+            "h": "Smirnoff vodka",
+            "e": "5.00"
+        }
+    },
+
+    "tonicTitle": "Mixers",
+
+    "tonic": {
+        "1": {
+            "h": "Tonic classic",
+            "e": "3.00"
+        },
+        "2": {
+            "h": "Fever tree",
+            "e": "3.50"
+        },
+        "3": {
+            "h": "Tonic zero",
+            "e": "3.00"
+        },
+        "4": {
+            "h": "Tonic premium",
+            "e": "3.50"
+        },
+        "5": {
+            "h": "Tonic berry",
+            "e": "3.50"
+        },
+        "6": {
+            "h": "Sprite/Cola",
+            "e": "3.80"
+        }
+
+    }
+}

@@ -1,0 +1,536 @@
+{
+    "menuPageTitle": "Meny",
+
+    "nav": {
+        "home": "Hjem",
+        "menu": "Meny",
+        "golf": "Golf",
+        "podcast": "Podkast"
+    },
+
+    "homeHerop": "Med fokus på god mat og en behagelig opplevelse",
+    "menuButton": "Meny",
+
+    "selector": {
+        "title": "Norsk",
+        "no": "Norsk",
+        "en": "Engelsk",
+        "es": "Spansk"
+    },
+
+    "about":{
+        "title": "Om La Luna",
+        "p": "Vi er en norsk restaurant som har drever her i over 20 år, og kjøkkenet vårt er hovedsakelig nordisk. Ta gjerne en kikk på menyen vår, så ønsker vi alle en hyggelig tur innom oss her på La Luna."
+    }, 
+
+    "event": {
+        "title": "Arrangement",
+        "p": "Gjennom helle året holder vi mange ulike arrangement."
+    },
+
+    "quiz": {
+        "title": "Quiz",
+        "p": "Vi arrangerer quiz på tirsdager og alle er velkommen."
+    },
+
+    "golf": {
+        "title": "Golf",
+        "p":"Her på La Luna er vi veldig glad i å spille golf, så om du letter etter noen å spille med er det bare å melde seg på å bli med.",
+        "button": "Les Mer"
+    },
+
+    "footer": {
+        "address": "C. de la Garza 28, \n03189 Orihuela, \nAlicante, Spania",
+        "opening": {
+            "title": "Åpningstider",
+            "1": "Mandag Stengt",
+            "2": "Tirsdag til Søndag \nkl 12:00 - 23:00",
+            "3": "Kjøkkenet stenger \nkl 22:00"
+        }
+    },
+
+    "golfOverlay": {
+        "h3": "Golf",
+        "p": "Her på La Luna Golf spiller vi hver onsdag, og alle HCP-er er velkommen. \n\nHer er vi en gruppe Nordmenn som koser oss og bygger et sosialt nettverk sammen. Når vi er ferdige å spille tar vi turen opp på La Luna på middag sammen, og ta gjerne med en ekstra gjest på middagen om dere vil det. \n\nHøres dette kjekt ut så er det bare å ta kontakt ved å ringe direkte til Irene på +34 650 049 726 eller kom innom restauranten en tur. Påmelding og betaling skjer senest søndagen før vi spiller."
+    },
+
+    "eventOverlay": {
+        "h3": "Arrangement",
+        "p": "Gjennom helle året har vi mange ulike arrangement, og noen eksempler på arrangement vi har hatt i tidligere år er rekeaften, fårikål dagene, 17 mai og julaften. For framtidige arrangement som vi holder så er det bare å holde et øye på Facebook der all informasjon om ulike arrangement blir oppdatert. \n\nHar du en spesiell anledning som skal feires som for eksempel bursdag, bryllup, eller en har en anledning der mange skal samles så er det bare å ta kontakt på telefon +34 650 049 726 eller kom innom en tur på forhånd. Vi elsker å stelle i stand en kjekk dag for gjestene våre."
+    },
+
+    "quizOverlay": {
+        "h3": "Quiz",
+        "p": "Vi arrangerer Quiz hver tirsdag klokken 20:00. Kom gjerne innom i 18-19:00 tiden for å få noe mat før vi starter. \n\nPåmeldingen skjer når dere kommer, rett før vi starter og koser 3€ per person, all intekt fra quizen går til veldedighet."
+    },
+
+    "podcastPageTitle": "Podkast",
+
+    "podcastText": "En podkast  laget av nordmenn for nordmenn. Vi snakker om alt mulig informasjon som kan være kjekt å vite om livet her i Spania..",
+
+    "menuh1": "Meny",
+
+    "category": "Kategori",
+
+    "categoryItem": {
+        "1": "Lunsj",
+        "2": "Smørbrød",
+        "3": "Forretter",
+        "4": "Kjøtt",
+        "5": "Fisk",
+        "6": "Desserter",
+        "7": "Kaffe",
+        "8": "Drinker",
+        "9": "Sprit",
+        "10": "Blandevann"
+    },
+
+    "lunchTitle": "Lunsj",
+
+    "lunch": {
+        "1": {
+            "h": "Vår berømte fiskesuppe",
+            "p1": "Normal",
+            "e1": "9.50",
+            "p2": "Stor",
+            "e2": "15.00"
+        },
+        "2": {
+            "h": "Brød",
+            "e": "4.00",
+            "p": "Med aioli og revet tomat i olje"
+        },
+        "3": {
+            "h": "Reker i olje og hvitløk",
+            "e": "12.50",
+            "p": "Med brød"
+        },
+        "4": {
+            "h": "Kyllingsalat",
+            "e": "15.00",
+            "p": "Med kylling, avokado, rødløk, bønner og gulrot"
+        },
+        "5": {
+            "h": "Husets salat",
+            "e": "15.00",
+            "p": "Med salat, egg, avokado, laks, mais og løk"
+        },
+        "6": {
+            "h": "Angusburger",
+            "e": "13.00",
+            "p": "Med ost, bacon, løk, salat, tomat og pommes frites"
+        },
+        "7": {
+            "h": "Nachos",
+            "e": "13.50",
+            "p": "Med jalapeno, tomat, ost og oksekjøttdeig"
+        },
+        "8": {
+            "h": "Lasagne",
+            "e": "12.00",
+            "p": "Med hvitløksbrød og crème fraîche"
+        },
+        "9": {
+            "h": "Spaghetti carbonara",
+            "e": "14.00",
+            "p": "Med brød, parmesan og bacon"
+        }
+    },
+
+    "sandwichTitle": "Smørbrød",
+
+    "sandwich": {
+        "1": {
+            "h": "Karbonade smørbrød",
+            "e": "8.50",
+            "p": "Med egg, løk, tomat og sylte agurk"
+        },
+        "2": {
+            "h": "Reke smørbrød",
+            "e": "11.50",
+            "p": "Med egg og majones"
+        },
+        "3": {
+            "h": "Laks smørbrød",
+            "e": "9.50",
+            "p": "Med eggerøre"
+        },
+        "4": {
+            "h": "Avokado smørbrød",
+            "e": "8.00",
+            "p": "Med egg og bacon"
+        },
+        "5": {
+            "h": "Egg benedikt smørbrød",
+            "e": "9.00",
+            "p": "Med laks, avokado og hollandaisesaus"
+        },
+        "6": {
+            "h": "Egg og bacon smørbrød",
+            "e": "9.00",
+            "p": "Med avokado"
+        },
+        "7": {
+            "h": "Sildetallerken",
+            "e": "16.00",
+            "p": "Med tre forskjellige sild, brød, egg, potet og crème fraîche"
+        },
+        "8": {
+            "h": "Poke bowle",
+            "e": "13.50",
+            "p1": "Med ris, ananas, løk, tomater, avokado, egg og mango",
+            "p2": "**Valg av:** reker, røkt laks eller kylling"
+        }
+    },
+
+    "starterTitle": "Forretter",
+
+    "starter": {
+        "1": {
+            "h": "Ristet brød",
+            "e": "4.00",
+            "p": "Med aioli og reven tomat i olje"
+        },
+        "2": {
+            "h": "Fransk løksuppe",
+            "e": "6.00",
+            "p": ""
+        },
+        "4": {
+            "h": "Reker i hvitløk",
+            "e": "12.50",
+            "p": "Med brød"
+        },
+        "5": {
+            "h": "Rekecoktail",
+            "e": "9.00",
+            "p": "Med brød"
+        },
+        "6": {
+            "h": "Blåskjell",
+            "e": "12.00",
+            "p": "Med hummersaus og brød"
+        },
+        "7": {
+            "h": "Bruschetta",
+            "e": "8.00",
+            "p": "Med tomat, løk og permasan"
+        },
+        "8": {
+            "h": "Mozzarella og tomat",
+            "e": "8.50",
+            "p": ""
+        },
+        "9": {
+            "h": "Pate og serranoskinke",
+            "e": "9.00",
+            "p": "Med brød og syltetøy"
+        }
+    },
+
+    "meatTitle": "Kjøtt",
+
+    "meat": {
+        "1": {
+            "h": "Indrefilet av spansk storfe",
+            "e": "28.00",
+            "p1": "250 gram angus med grønnsaker og ditt valg av poteter og saus",
+            "p2": "**Valg av poteter:** fløtegratinerte, Baktpotet, chips, søtpotet chips eller kokt potet",
+            "p3": "**Valg av saus:** peppersaus, whiskeysaus, champignonsaus"
+        },
+        "2": {
+            "h": "Spareribs",
+            "e": "18.00",
+            "p": "BBQ marinerte med italiensk salat og spicy poteter"
+        },
+        "3": {
+            "h": "**Eksta:**",
+            "p1": "Poteter",
+            "e1": "3.50",
+            "p2": "Saus",
+            "e2": "3.00"
+        },
+        "4": {
+            "h": "Lammeskank",
+            "e": "19.50",
+            "p": "Med grønnsaker, skysaus og rotmos"
+        },
+        "5": {
+            "h": "Tallerken for to",
+            "e": "36.00 \nPer pers",
+            "p1": "Helstekt indrefilet av spansk angus 500-600 g",
+            "p2": "Med to til tre potet varianter, to suaser og grønnsaker",
+            "p3": "**Må forhånds bestilles**"
+        },
+        "6": {
+            "h": "Indrefilet av svin",
+            "e": "17.00",
+            "p": "Med grønnsaker, peppersaus og spicy poteter"
+        }
+    },
+
+    "fishTitle": "Fisk",
+
+    "fish": {
+        "1": {
+            "h": "Stekt laks",
+            "e": "18.50",
+            "p": "Med kokte potet, grønnsaker og smørsaus"
+        },
+        "2": {
+            "h": "Spansk beinfri lysing",
+            "e": "18.00",
+            "p": "Med potetemos, bacon og gulrot"
+        },
+        "3": {
+            "h": "Posjert torsk",
+            "e": "19.50",
+            "p": "Med baconfett, grønnsaker og rotmos"
+        },
+        "4": {
+            "h": "Spansk flyndrefilet",
+            "e": "17.00",
+            "p": "Med poteter og hummersaus"
+        },
+        "5": {
+            "h": "Spaghetti",
+            "e1": "14.00",
+            "p1": "Med fresk hvitløk, chilli og søt chilisaus",
+            "p2": "**Valg av:** Reker eller Kylling",
+            "p3": "Hvitløksbrød",
+            "e2": "1.50"
+        }
+    },
+
+    "dessertTitle": "Dessert",
+
+    "dessert": {
+        "1": {
+            "h": "Crème brûlée",
+            "e": "6.90",
+            "p": "Med frukt"
+        },
+        "2": {
+            "h": "Husets tiramisu",
+            "e": "8.00",
+            "p": ""
+        },
+        "3": {
+            "h": "Varme blåbær",
+            "e": "5.90",
+            "p": "Med vaniljeis"
+        },
+        "4": {
+            "h": "Eplekake",
+            "e": "5.90",
+            "p": "Med vaniljeis"
+        },
+        "5": {
+            "h": "Sitronsorbet",
+            "e": "5.90",
+            "p": "Med frukt"
+        },
+        "6": {
+            "h": "Mangosorbet",
+            "e": "5.90",
+            "p": "Med frukt"
+        },
+        "7": {
+            "h": "Kuleis",
+            "e": "5.90",
+            "p": "To kuler med vaniljeis og sjokoladesaus"
+        },
+        "8": {
+            "h": "Pannekaker",
+            "e": "5.90",
+            "p": "Med vaniljeis"
+        }
+    },
+
+    "coffeeTitle": "Kaffe",
+
+    "coffee": {
+        "1": {
+            "h": "Irish coffee",
+            "e": "7.00",
+            "p": "Kaffe, whiskey og krem"
+        },
+        "2": {
+            "h": "Lenas kaffe",
+            "e": "8.00",
+            "p": "Kaffe, baileys, cointreau, melk og kanel"
+        },
+        "3": {
+            "h": "Baileys kaffe",
+            "e": "8.00",
+            "p": "Kaffe, baileys og krem"
+        },
+        "4": {
+            "h": "Calypso kaffe",
+            "e": "8.00",
+            "p": "Kaffe, tia maria og krem"
+        },
+        "5": {
+            "h": "Espresso martini",
+            "e": "8.00",
+            "p": "Kaffe, vodka, kahlua og sukker likør"
+        }
+    },
+
+    "drinksTitle": "Drinker",
+
+    "drinks": {
+        "1": {
+            "h": "Rød sangria",
+            "p1": "Glass",
+            "e1": "6.00",
+            "p2": "Mugge",
+            "e2": "15.00"
+        },
+        "2": {
+            "h": "Hvit sangria",
+            "p1": "Glass",
+            "e1": "6.00",
+            "p2": "Mugge",
+            "e2": "15.00"
+        },
+        "3": {
+            "h": "Piña colada",
+            "e": "8.00",
+            "p": "Rom, kokoskrem og ananasjuice"
+        },
+        "4": {
+            "h": "Mimosa",
+            "e": "5.00",
+            "p": "Prosecco og appelsinjuice"
+        },
+        "5": {
+            "h": "Aperol Spritz",
+            "e": "8.00",
+            "p": "Aperol, cava og sprite"
+        },
+        "6": {
+            "h": "Limoncello Spritz",
+            "e": "8.00",
+            "p": "Limoncello, cava and sprite"
+        },
+        "7": {
+            "h": "Mexican mule",
+            "e": "8.00",
+            "p": "Tequila, lime og ingefærøl"
+        },
+        "8": {
+            "h": "Jordbær mojito",
+            "e": "8.00",
+            "p": "Hvit rom, tripple sec, mynte, cava og jordbær"
+        },
+        "9": {
+            "h": "Porn star martini",
+            "e": "8.50",
+            "p": "Prosecco, vaniljevodka, pasjonsfrukt, ananasjuice og sukkerlake"
+        },
+        "10": {
+            "h": "Frozen Baileys",
+            "e": "8.00",
+            "p": "Vodka, baileys, sjokolade"
+        },
+        "11": {
+            "h": "Mojito",
+            "e": "7.00",
+            "p": "Hvit rom, mynte, sukker, limejuice, sprite"
+        },
+        "12": {
+            "h": "Strawberry Daiquiri",
+            "e": "8.00",
+            "p": "Rom, jordbærlikør, sukker, sprite"
+        }
+    },
+
+    "ginTitle": "Sprit",
+
+    "gin": {
+        "1": {
+            "h": "Larios",
+            "e": "5.00"
+        },
+        "2": {
+            "h": "Bombay saphire",
+            "e": "7.00"
+        },
+        "3": {
+            "h": "Gordon`s dry",
+            "e": "5.00"
+        },
+        "4": {
+            "h": "Tanqueray dry",
+            "e": "8.00"
+        },
+        "5": {
+            "h": "Pink",
+            "e": "6.50"
+        },
+        "6": {
+            "h": "Hendrick`s",
+            "e": "9.00"
+        },
+        "7": {
+            "h": "Blue",
+            "e": "6.50"
+        },
+        "8": {
+            "h": "Brockman`s",
+            "e": "10.00"
+        },
+        "9": {
+            "h": "London",
+            "e": "6.00"
+        },
+        "10": {
+            "h": "Bulldog",
+            "e": "8.00"
+        },
+        "11": {
+            "h": "Beefeater dry",
+            "e": "5.50"
+        },
+        "12": {
+            "h": "Bacardi",
+            "e": "5.00"
+        },
+        "13": {
+            "h": "Smirnoff vodka",
+            "e": "5.00"
+        }
+
+    },
+
+    "tonicTitle": "Blandevann",
+
+    "tonic": {
+        "1": {
+            "h": "Tonic classic",
+            "e": "3.00"
+        },
+        "2": {
+            "h": "Fever tree",
+            "e": "3.50"
+        },
+        "3": {
+            "h": "Tonic zero",
+            "e": "3.00"
+        },
+        "4": {
+            "h": "Tonic premium",
+            "e": "3.50"
+        },
+        "5": {
+            "h": "Tonic berry",
+            "e": "3.50"
+        },
+        "6": {
+            "h": "Sprite/Cola",
+            "e": "3.80"
+        }
+    }
+
+}
