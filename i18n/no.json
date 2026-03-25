@@ -9,7 +9,8 @@
     },
 
     "homeHerop": "Med fokus på god mat og en behagelig opplevelse",
-    "menuButton": "Meny",
+    "menuButton": "Se Meny",
+    "reserveButton": "Reserver Bord",
 
     "selector": {
         "title": "Norsk",
@@ -19,6 +20,7 @@
     },
 
     "about":{
+        "subtitle": "Vår Historie",
         "title": "Om La Luna",
         "p": "Vi er en norsk restaurant som har drever her i over 20 år, og kjøkkenet vårt er hovedsakelig nordisk. Ta gjerne en kikk på menyen vår, så ønsker vi alle en hyggelig tur innom oss her på La Luna."
     }, 
@@ -34,13 +36,58 @@
     },
 
     "golf": {
+        "subtitle": "Bli Med",
         "title": "Golf",
         "p":"Her på La Luna er vi veldig glad i å spille golf, så om du letter etter noen å spille med er det bare å melde seg på å bli med.",
         "button": "Les Mer"
     },
 
+    "reviews": {
+        "1": {
+            "text": "Helt fantastisk mat! Fiskesuppen er den beste jeg har smakt. Atmosfæren er varm og innbydende. Vi kommer hit hver gang vi besøker Alicante.",
+            "name": "Erik Hansen",
+            "avatar": "E",
+            "date": "2 måneder siden"
+        },
+        "2": {
+            "text": "En skjult perle for skandinaver i Spania. Den nordisk-inspirerte menyen er autentisk og deilig. Personalet er utrolig hyggelig. Anbefaler lammeskanken på det sterkeste!",
+            "name": "Ingrid Johansen",
+            "avatar": "I",
+            "date": "3 måneder siden"
+        },
+        "3": {
+            "text": "Vi feiret jubileumet vårt her og det var perfekt. Delingen for to var enestående. Vakker restaurant med god service.",
+            "name": "Morten Berg",
+            "avatar": "M",
+            "date": "1 måned siden"
+        },
+        "4": {
+            "text": "Flott sted for quiz hver tirsdag! Morsom atmosfære og bra priser på drinker. Nachosen er deilig som snacks.",
+            "name": "Lisa Andersen",
+            "avatar": "L",
+            "date": "4 måneder siden"
+        },
+        "5": {
+            "text": "Beste norske restaurant på Costa Blanca. De har vært her i 20+ år av en grunn. Prøv espresso martinien — den er fantastisk!",
+            "name": "Thomas Nilsen",
+            "avatar": "T",
+            "date": "2 uker siden"
+        }
+    },
+
+    "location": {
+        "subtitle": "Besøk Oss",
+        "title": "Finn Oss",
+        "addressLabel": "Adresse",
+        "phoneLabel": "Telefon",
+        "whatsapp": "Chat på WhatsApp"
+    },
+
     "footer": {
         "address": "C. de la Garza 28, \n03189 Orihuela, \nAlicante, Spania",
+        "tagline": "En norsk restaurant i Alicante som serverer nordisk-inspirert mat med kjærlighet i over 20 år.",
+        "quicklinks": "Hurtiglenker",
+        "contactTitle": "Kontakt",
         "opening": {
             "title": "Åpningstider",
             "1": "Mandag Stengt",

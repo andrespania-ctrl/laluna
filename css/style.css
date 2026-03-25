@@ -123,6 +123,7 @@ h4 {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: opacity, transform;
 }
 
 .fade-in.visible {
@@ -134,6 +135,7 @@ h4 {
     opacity: 0;
     transform: translateX(-40px);
     transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: opacity, transform;
 }
 
 .fade-in-left.visible {
@@ -145,6 +147,7 @@ h4 {
     opacity: 0;
     transform: translateX(40px);
     transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: opacity, transform;
 }
 
 .fade-in-right.visible {
@@ -486,8 +489,17 @@ nav img:hover {
     background: var(--primary-brown);
     border: 1px solid var(--glass-border);
     border-radius: 12px;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: var(--shadow-card);
+}
+
+#langOptions::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 12px;
 }
 
 .selectHide {

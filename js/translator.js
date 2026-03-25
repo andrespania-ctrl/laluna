@@ -75,12 +75,17 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const langSelector = document.getElementById("langSelector");
 
+    let hideTimeout = null;
+
     langSelector.addEventListener("mouseenter", () => {
+        clearTimeout(hideTimeout);
         langOptions.classList.remove("selectHide");
     });
 
     langSelector.addEventListener("mouseleave", () => {
-        langOptions.classList.add("selectHide");
+        hideTimeout = setTimeout(() => {
+            langOptions.classList.add("selectHide");
+        }, 150);
     });
 
     selectButton.addEventListener("click", function (e) {

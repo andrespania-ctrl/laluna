@@ -8,8 +8,76 @@ document.addEventListener("click", (e) => {
     }
 });
 
+// ============================================
+// SCROLL-BASED NAV TRANSPARENCY
+// ============================================
+function handleNavScroll() {
+    const scrollY = window.scrollY;
+    if (scrollY > 50) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+}
 
-//overlays
+window.addEventListener('scroll', handleNavScroll);
+handleNavScroll(); // run on load
+
+// ============================================
+// INTERSECTION OBSERVER — FADE-IN ANIMATIONS
+// ============================================
+document.addEventListener('DOMContentLoaded', () => {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -40px 0px',
+        threshold: 0.05
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => {
+        observer.observe(el);
+    });
+});
+
+// ============================================
+// GOOGLE REVIEWS CAROUSEL AUTO-SCROLL
+// ============================================
+const reviewsCarousel = document.getElementById('reviewsCarousel');
+
+if (reviewsCarousel) {
+    let scrollInterval;
+    let isPaused = false;
+
+    function autoScroll() {
+        scrollInterval = setInterval(() => {
+            if (!isPaused) {
+                const maxScroll = reviewsCarousel.scrollWidth - reviewsCarousel.clientWidth;
+                if (reviewsCarousel.scrollLeft >= maxScroll - 10) {
+                    reviewsCarousel.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    reviewsCarousel.scrollBy({ left: 340, behavior: 'smooth' });
+                }
+            }
+        }, 4000);
+    }
+
+    reviewsCarousel.addEventListener('mouseenter', () => isPaused = true);
+    reviewsCarousel.addEventListener('mouseleave', () => isPaused = false);
+
+    autoScroll();
+}
+
+// ============================================
+// OVERLAYS
+// ============================================
 const openGolfElements = document.getElementsByClassName('openGolf');
 const openEvent = document.getElementById('openEvent');
 const openQuiz = document.getElementById('openQuiz');
@@ -31,24 +99,24 @@ for (const golfElement of openGolfElements) {
 }
 
 if (openCategory && categoryOverlay) {
-openCategory.addEventListener('click', (e) => {
-    e.stopPropagation();
-    categoryOverlay.showModal();
-});
+    openCategory.addEventListener('click', (e) => {
+        e.stopPropagation();
+        categoryOverlay.showModal();
+    });
 }
 
 if (openEvent && eventOverlay) {
-openEvent.addEventListener('click', (e) => {
-    e.stopPropagation();
-    eventOverlay.showModal();
-});
+    openEvent.addEventListener('click', (e) => {
+        e.stopPropagation();
+        eventOverlay.showModal();
+    });
 }
 
 if (openQuiz && quizOverlay) {
-openQuiz.addEventListener('click', (e) => {
-    e.stopPropagation();
-    quizOverlay.showModal();
-});
+    openQuiz.addEventListener('click', (e) => {
+        e.stopPropagation();
+        quizOverlay.showModal();
+    });
 }
 
 closeButtons.forEach((btn) => {
@@ -80,16 +148,20 @@ closeMenu.forEach((btn) => {
     });
 });
 
-//scroll to top button on menu page
+// ============================================
+// SCROLL TO TOP BUTTON
+// ============================================
 const scrollTopBtn = document.getElementById("scrollTop");
 
 if (scrollTopBtn) {
-scrollTopBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-});
+    scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 }
 
-//youtube video feed 
+// ============================================
+// YOUTUBE VIDEO FEED (Podcast page)
+// ============================================
 const apiKey = "AIzaSyAXiloI8979-xpUrS94lTTMdTH34oNqroY";
 const channelId = "UCpeMUgtblac1z3KU8wCIOtA";
 const container = document.getElementById("videoFeedContainer");
@@ -119,9 +191,6 @@ async function displayChannelFeed() {
         const videoId = item.snippet.resourceId.videoId;
         const title = item.snippet.title;
         const description = item.snippet.description;
-        const publishedAt = new Date(item.snippet.publishedAt).toLocaleDateString();
-        const thumbnailUrl = item.snippet.thumbnails.medium.url;
-        const channelTitle = item.snippet.channelTitle;
 
         const videoWrapper = document.createElement("div");
         videoWrapper.classList.add("video-item");

@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Luna</title>
+    <title>La Luna — Norwegian Restaurant in Alicante</title>
+    <meta name="description" content="La Luna is a Norwegian restaurant in Alicante, Spain offering Nordic cuisine, events, quiz nights and golf. Over 20 years of great food and atmosphere.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="/js/translator.js" defer></script>
     <script src="/js/website.js" defer></script>
 </head>
 <body>
-    <nav>
-        <a href="/index.html"><img src="/images/la luna w.png"></a>
+    <!-- NAVIGATION -->
+    <nav id="mainNav">
+        <a href="/index.html"><img src="/images/la luna w.png" alt="La Luna Logo"></a>
         <input type="checkbox" id="menuToggle" />
         <label for="menuToggle" class="hamburger">&#9776;</label>
         <div class="navLinks" id="navLinks">
@@ -24,82 +26,252 @@
             <a class="podcast" data-i18n="nav.podcast" href="/podcast.html"></a>
         </div>
     </nav>
+
     <main>
+        <!-- HERO SECTION -->
         <div id="homeHeroBack">
             <div id="homeHero">
-                <img src="/images/la luna w.png">
+                <img src="/images/la luna w.png" alt="La Luna Logo">
                 <p class="herop" data-i18n="homeHerop"></p>
-                <a href="/menu.html"><button class="bigButton" data-i18n="menuButton"></button></a>
+                <div class="hero-buttons">
+                    <a href="/menu.html"><button class="bigButton" data-i18n="menuButton"></button></a>
+                    <a href="https://wa.me/0034650049726" target="_blank"><button class="bigButton outline" data-i18n="reserveButton"></button></a>
+                </div>
             </div>
         </div>
+
+        <!-- GOOGLE REVIEWS SECTION -->
+        <section id="reviewsSec" class="fade-in">
+            <div class="reviews-header">
+                <div class="google-badge">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                    </svg>
+                    <span>Google Reviews</span>
+                </div>
+                <div class="rating-display">
+                    <span class="rating-number">4.3</span>
+                    <div>
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star half">★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-carousel" id="reviewsCarousel">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text" data-i18n="reviews.1.text"></p>
+                    <div class="review-author">
+                        <div class="review-avatar" data-i18n="reviews.1.avatar"></div>
+                        <div>
+                            <div class="review-author-name" data-i18n="reviews.1.name"></div>
+                            <div class="review-author-date" data-i18n="reviews.1.date"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text" data-i18n="reviews.2.text"></p>
+                    <div class="review-author">
+                        <div class="review-avatar" data-i18n="reviews.2.avatar"></div>
+                        <div>
+                            <div class="review-author-name" data-i18n="reviews.2.name"></div>
+                            <div class="review-author-date" data-i18n="reviews.2.date"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text" data-i18n="reviews.3.text"></p>
+                    <div class="review-author">
+                        <div class="review-avatar" data-i18n="reviews.3.avatar"></div>
+                        <div>
+                            <div class="review-author-name" data-i18n="reviews.3.name"></div>
+                            <div class="review-author-date" data-i18n="reviews.3.date"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text" data-i18n="reviews.4.text"></p>
+                    <div class="review-author">
+                        <div class="review-avatar" data-i18n="reviews.4.avatar"></div>
+                        <div>
+                            <div class="review-author-name" data-i18n="reviews.4.name"></div>
+                            <div class="review-author-date" data-i18n="reviews.4.date"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text" data-i18n="reviews.5.text"></p>
+                    <div class="review-author">
+                        <div class="review-avatar" data-i18n="reviews.5.avatar"></div>
+                        <div>
+                            <div class="review-author-name" data-i18n="reviews.5.name"></div>
+                            <div class="review-author-date" data-i18n="reviews.5.date"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LANGUAGE SELECTOR -->
         <div id="langSelector">
             <img id="flagImg" src="/images/no.png" alt="language flag">
             <button id="languageSwitcher" onchange="changeFlag()" data-i18n="selector.title"></button>
             <div class="selectHide" id="langOptions">
                 <div id="no" class="option" value="no" data-i18n="selector.no"></div>
                 <div id="en" class="option" value="en" data-i18n="selector.en"></div>
-                <!--<div id="es" class="option" value="es" data-i18n="selector.es"></div> -->
+                <!--<div id="es" class="option" value="es" data-i18n="selector.es"></div>-->
             </div>
         </div>
-        <div id="aboutSec">
-            <div>
+
+        <!-- ABOUT SECTION -->
+        <section id="aboutSec">
+            <div class="fade-in-left">
+                <p class="section-subtitle" data-i18n="about.subtitle"></p>
                 <h2 data-i18n="about.title"></h2>
                 <p data-i18n="about.p"></p>
                 <a href="/menu.html"><button class="smallButton" data-i18n="menuButton"></button></a>
             </div>
-            <img id="aboutImg" src="/images/profile.jpg" alt="Image of owner">
-        </div>
+            <img id="aboutImg" src="/images/profile.jpg" alt="Image of owner" class="fade-in-right">
+        </section>
+
+        <!-- PARALLAX DIVIDER -->
         <div id="fasadeImg"></div>
-        <div id="activitySec">
-            <div class="activity">
+
+        <!-- ACTIVITIES SECTION -->
+        <section id="activitySec">
+            <div class="activity fade-in">
                 <img src="/images/event.png" alt="Table decorated for 17 May">
                 <div id="openEvent">
                     <h3 data-i18n="event.title"></h3>
                     <p data-i18n="event.p"></p>
                 </div>
             </div>
-            <div class="activity">
+            <div class="activity fade-in">
                 <img src="/images/salong.jpg" alt="Image of the salon">
                 <div id="openQuiz">
                     <h3 data-i18n="quiz.title"></h3>
                     <p data-i18n="quiz.p"></p>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- GOLF SECTION -->
         <div id="golf">
-            <div>
+            <div class="fade-in">
+                <p class="section-subtitle" data-i18n="golf.subtitle"></p>
                 <h2 data-i18n="golf.title"></h2>
                 <p data-i18n="golf.p"></p>
-                <button class="smallButton openGolf" data-i18n="golf.button"></button>
+                <button class="bigButton openGolf" data-i18n="golf.button"></button>
             </div>
         </div>
+
+        <!-- FIND US / LOCATION SECTION -->
+        <section id="locationSec">
+            <div class="location-info fade-in-left">
+                <p class="section-subtitle" data-i18n="location.subtitle"></p>
+                <h2 data-i18n="location.title"></h2>
+                <div class="location-details">
+                    <div class="location-detail">
+                        <div class="location-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div>
+                            <strong data-i18n="location.addressLabel"></strong>
+                            <p class="lineBreak" data-i18n="footer.address"></p>
+                        </div>
+                    </div>
+                    <div class="location-detail">
+                        <div class="location-icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <div>
+                            <strong data-i18n="footer.opening.title"></strong>
+                            <p class="lineBreak" data-i18n="footer.opening.1"></p>
+                            <p class="lineBreak" data-i18n="footer.opening.2"></p>
+                            <p class="lineBreak" data-i18n="footer.opening.3"></p>
+                        </div>
+                    </div>
+                    <div class="location-detail">
+                        <div class="location-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div>
+                            <strong data-i18n="location.phoneLabel"></strong>
+                            <p>+34 650 049 726</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://wa.me/0034650049726" target="_blank">
+                    <button class="whatsapp-btn">
+                        <i class="fa fa-whatsapp"></i>
+                        <span data-i18n="location.whatsapp"></span>
+                    </button>
+                </a>
+            </div>
+            <div class="location-map fade-in-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3134.5!2d-0.7414!3d37.9258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63a99e1cb90b5d%3A0x8e5c7e25f32ae6a6!2sLa%20Luna%20Bar%20%26%20Restaurant!5e0!3m2!1sen!2ses!4v1711325000000!5m2!1sen!2ses"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="La Luna Restaurant Location">
+                </iframe>
+            </div>
+        </section>
     </main>
+
+    <!-- FOOTER -->
     <footer>
-        <div id="fContact">
-            <a href="/index.html"><img src="/images/la luna w.png"></a>
-            <p class="lineBreak detailp" data-i18n="footer.address"></p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/LaLunaLasMimosas" target="_blank" class="fa fa-facebook"></a>
-                <a href="https://www.instagram.com/la_luna_restaurante/" target="_blank" class="fa fa-instagram"></a>
-                <a href="https://wa.me/0034650049726" target="_blank" class="fa fa-whatsapp"></a>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/index.html"><img src="/images/la luna w.png" alt="La Luna Logo"></a>
+                <p data-i18n="footer.tagline"></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/LaLunaLasMimosas" target="_blank" class="fa fa-facebook" aria-label="Facebook"></a>
+                    <a href="https://www.instagram.com/la_luna_restaurante/" target="_blank" class="fa fa-instagram" aria-label="Instagram"></a>
+                    <a href="https://wa.me/0034650049726" target="_blank" class="fa fa-whatsapp" aria-label="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer.quicklinks"></h4>
+                <a data-i18n="nav.home" href="/index.html"></a>
+                <a data-i18n="nav.menu" href="/menu.html"></a>
+                <a class="openGolf" data-i18n="nav.golf"></a>
+                <a data-i18n="nav.podcast" href="/podcast.html"></a>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer.opening.title"></h4>
+                <p class="lineBreak" data-i18n="footer.opening.1"></p>
+                <p class="lineBreak" data-i18n="footer.opening.2"></p>
+                <p class="lineBreak" data-i18n="footer.opening.3"></p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer.contactTitle"></h4>
+                <p class="lineBreak" data-i18n="footer.address"></p>
+                <p>+34 650 049 726</p>
             </div>
         </div>
-        <div id="fMenu">
-            <a data-i18n="nav.home" href="/index.html"></a>
-            <a data-i18n="nav.menu" href="/menu.html"></a>
-            <a class="openGolf" data-i18n="nav.golf"></a>
-            <a data-i18n="nav.podcast" href="/podcast.html"></a>
-        </div>
-        <div>
-            <h4 data-i18n="footer.opening.title"></h4>
-            <p class="lineBreak" data-i18n="footer.opening.1"></p>
-            <p class="lineBreak" data-i18n="footer.opening.2"></p>
-            <p class="lineBreak" data-i18n="footer.opening.3"></p>
+        <div class="footer-bottom">
+            <p>© 2025 La Luna Bar & Restaurant. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- OVERLAYS -->
     <dialog id="golfOverlay" class="overlay">
         <div id="golfImg">
-            <img src="/images/lalunaGolfLogo.png" alt="La Luna logo">
+            <img src="/images/lalunaGolfLogo.png" alt="La Luna Golf logo">
             <div class="x">&times;</div>
         </div>
         <div class="contentBox">
@@ -107,6 +279,7 @@
             <p data-i18n="golfOverlay.p"></p>
         </div>
     </dialog>
+
     <dialog id="eventOverlay" class="overlay">
         <div id="eventImg">
             <div class="x">&times;</div>
@@ -116,6 +289,7 @@
             <p data-i18n="eventOverlay.p"></p>
         </div>
     </dialog>
+
     <dialog id="quizOverlay" class="overlay">
         <div id="quizImg">
             <div class="x">&times;</div>

@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="menuPageTitle"></title>
+    <meta name="description" content="La Luna menu — Nordic cuisine, lunch, sandwiches, meat, fish, desserts, cocktails and more in Alicante, Spain.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="/js/translator.js" defer></script>
     <script src="/js/website.js" defer></script>
 </head>
 <body>
-    <nav class="menuAlt">
-        <a href="/index.html"><img src="/images/la luna g.png"></a>
+    <nav id="mainNav" class="menuAlt">
+        <a href="/index.html"><img src="/images/la luna w.png" alt="La Luna Logo"></a>
         <input type="checkbox" id="menuToggle" />
         <label for="menuToggle" class="hamburger hamburgerAlt">&#9776;</label>
         <div class="navLinks menuAlt" id="navLinks">
@@ -34,7 +35,7 @@
                 <p class="lineBreak" data-i18n="footer.opening.3"></p>
             </div>
         </div>
-        <a ef="#menuHero"><div id="scrollTop"></div></a>
+        <a href="#menuHero"><div id="scrollTop"></div></a>
         <div id="langSelector">
             <img id="flagImg" src="/images/no.png" alt="language flag">
             <button id="languageSwitcher" onchange="changeFlag()" data-i18n="selector.title"></button>
@@ -562,26 +563,37 @@
         </div>
     </main>
     <footer class="menuAlt">
-        <div id="fContact">
-            <a href="/index.html"><img src="/images/la luna g.png"></a>
-            <p class="lineBreak detailp" data-i18n="footer.address"></p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/LaLunaLasMimosas" target="_blank" class="fa fa-facebook"></a>
-                <a href="https://www.instagram.com/la_luna_restaurante/" target="_blank" class="fa fa-instagram"></a>
-                <a href="https://wa.me/0034650049726" target="_blank" class="fa fa-whatsapp"></a>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/index.html"><img src="/images/la luna w.png" alt="La Luna Logo"></a>
+                <p data-i18n="footer.tagline"></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/LaLunaLasMimosas" target="_blank" class="fa fa-facebook" aria-label="Facebook"></a>
+                    <a href="https://www.instagram.com/la_luna_restaurante/" target="_blank" class="fa fa-instagram" aria-label="Instagram"></a>
+                    <a href="https://wa.me/0034650049726" target="_blank" class="fa fa-whatsapp" aria-label="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer.quicklinks"></h4>
+                <a data-i18n="nav.home" href="/index.html"></a>
+                <a data-i18n="nav.menu" href="/menu.html"></a>
+                <a class="openGolf" data-i18n="nav.golf"></a>
+                <a data-i18n="nav.podcast" href="/podcast.html"></a>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer.opening.title"></h4>
+                <p class="lineBreak" data-i18n="footer.opening.1"></p>
+                <p class="lineBreak" data-i18n="footer.opening.2"></p>
+                <p class="lineBreak" data-i18n="footer.opening.3"></p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer.contactTitle"></h4>
+                <p class="lineBreak" data-i18n="footer.address"></p>
+                <p>+34 650 049 726</p>
             </div>
         </div>
-        <div id="fMenu">
-            <a data-i18n="nav.home" href="/index.html"></a>
-            <a data-i18n="nav.menu" href="/menu.html"></a>
-            <a class="openGolf" data-i18n="nav.golf"></a>
-            <a data-i18n="nav.podcast" href="/podcast.html"></a>
-        </div>
-        <div>
-            <h4 data-i18n="footer.opening.title"></h4>
-            <p class="lineBreak" data-i18n="footer.opening.1"></p>
-            <p class="lineBreak" data-i18n="footer.opening.2"></p>
-            <p class="lineBreak" data-i18n="footer.opening.3"></p>
+        <div class="footer-bottom">
+            <p>© 2025 La Luna Bar & Restaurant. All rights reserved.</p>
         </div>
     </footer>
     <dialog id="golfOverlay" class="overlay">
