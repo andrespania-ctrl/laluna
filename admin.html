@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - La Luna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/admin.css">
+    <script type="module" src="/js/admin.js" defer></script>
+</head>
+<body>
+    <nav id="mainNav" class="scrolled">
+        <a href="/"><img src="/images/la luna w.png" alt="La Luna Logo"></a>
+        <div class="navLinks" id="navLinks" style="align-items: center; display: flex;">
+            <a href="/">Back to Site</a>
+        </div>
+    </nav>
+    <main class="admin-main">
+        <div id="authSection" class="admin-section">
+            <h2 style="margin-bottom: 2rem;">Admin Login</h2>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Email" required class="admin-input">
+                <input type="password" id="password" placeholder="Password" required class="admin-input">
+                <button type="submit" class="CategoryButton">Login</button>
+            </form>
+            <p id="authError" style="color: red; margin-top: 1rem;"></p>
+        </div>
+
+        <div id="dashboardSection" class="admin-section hidden">
+            <div class="dashboard-header">
+                <h2>Admin Dashboard</h2>
+                <button id="logoutBtn" class="CategoryButton">Logout</button>
+            </div>
+            
+            <div class="admin-grid">
+                <!-- Podcasts -->
+                <div class="admin-card">
+                    <h3>Manage Podcasts</h3>
+                    <form id="addPodcastForm">
+                        <input type="url" id="podcastLink" placeholder="YouTube Video Link" required class="admin-input">
+                        <textarea id="podcastDesc" placeholder="Podcast Description" class="admin-input"></textarea>
+                        <button type="submit" class="CategoryButton">Add Podcast</button>
+                    </form>
+                    <div id="podcastList" class="admin-list"></div>
+                </div>
+
+                <!-- Menu Categories -->
+                <div class="admin-card">
+                    <h3>Manage Menu Categories</h3>
+                    <form id="addCategoryForm">
+                        <input type="text" id="categoryName" placeholder="Category Name (e.g. Breakfast)" required class="admin-input">
+                        <input type="number" id="categoryOrder" placeholder="Display Order (e.g. 1)" class="admin-input">
+                        <button type="submit" class="CategoryButton">Add Category</button>
+                    </form>
+                    <div id="categoryList" class="admin-list"></div>
+                </div>
+
+                <!-- Menu Items -->
+                <div class="admin-card admin-card-wide">
+                    <h3>Manage Menu Items</h3>
+                    <form id="addItemForm" class="grid-form">
+                        <select id="itemCategory" required class="admin-input">
+                            <option value="">Select Category...</option>
+                        </select>
+                        <input type="text" id="itemTitle" placeholder="Item Title" required class="admin-input">
+                        <input type="text" id="itemPrice" placeholder="Price (e.g. € 15.00)" class="admin-input">
+                        <textarea id="itemDesc" placeholder="Description" class="admin-input full-width"></textarea>
+                        <button type="submit" class="CategoryButton full-width">Add Item</button>
+                    </form>
+                    <div id="itemList" class="admin-list"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

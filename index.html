@@ -16,14 +16,14 @@
 <body>
     <!-- NAVIGATION -->
     <nav id="mainNav">
-        <a href="/index.html"><img src="/images/la luna w.png" alt="La Luna Logo"></a>
+        <a href="/"><img src="/images/la luna w.png" alt="La Luna Logo"></a>
         <input type="checkbox" id="menuToggle" />
         <label for="menuToggle" class="hamburger">&#9776;</label>
         <div class="navLinks" id="navLinks">
-            <a class="home" data-i18n="nav.home" href="/index.html"></a>
-            <a data-i18n="nav.menu" href="/menu.html"></a>
+            <a class="home" data-i18n="nav.home" href="/"></a>
+            <a data-i18n="nav.menu" href="/menu"></a>
             <a class="openGolf" data-i18n="nav.golf"></a>
-            <a class="podcast" data-i18n="nav.podcast" href="/podcast.html"></a>
+            <a class="podcast" data-i18n="nav.podcast" href="/podcast"></a>
         </div>
     </nav>
 
@@ -34,9 +34,24 @@
                 <img src="/images/la luna w.png" alt="La Luna Logo">
                 <p class="herop" data-i18n="homeHerop"></p>
                 <div class="hero-buttons">
-                    <a href="/menu.html"><button class="bigButton" data-i18n="menuButton"></button></a>
-                    <a href="https://wa.me/0034650049726" target="_blank"><button class="bigButton outline" data-i18n="reserveButton"></button></a>
+                    <a href="/menu"><button class="bigButton" data-i18n="menuButton"></button></a>
+                    <a href="https://wa.me/34650049726" target="_blank"><button class="bigButton outline" data-i18n="reserveButton"></button></a>
                 </div>
+                <!-- Google Review Hero Badge -->
+                <a href="#reviewsSec" class="hero-review-badge fade-in" aria-label="See our Google Reviews">
+                    <div class="hero-badge-content">
+                        <div class="hero-badge-g">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                        </div>
+                        <span class="hero-badge-rating">4.3 <span style="color:#FFC107;">★</span></span>
+                        <span class="hero-badge-text">Google Reviews</span>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -141,7 +156,7 @@
                 <p class="section-subtitle" data-i18n="about.subtitle"></p>
                 <h2 data-i18n="about.title"></h2>
                 <p data-i18n="about.p"></p>
-                <a href="/menu.html"><button class="smallButton" data-i18n="menuButton"></button></a>
+                <a href="/menu"><button class="smallButton" data-i18n="menuButton"></button></a>
             </div>
             <img id="aboutImg" src="/images/profile.jpg" alt="Image of owner" class="fade-in-right">
         </section>
@@ -149,20 +164,39 @@
         <!-- PARALLAX DIVIDER -->
         <div id="fasadeImg"></div>
 
-        <!-- ACTIVITIES SECTION -->
-        <section id="activitySec">
-            <div class="activity fade-in">
-                <img src="/images/event.png" alt="Table decorated for 17 May">
-                <div id="openEvent">
-                    <h3 data-i18n="event.title"></h3>
-                    <p data-i18n="event.p"></p>
-                </div>
+        <!-- ACTIVITIES & EVENTS SECTION -->
+        <section id="activitySec" class="events-board-sec fade-in">
+            <div class="events-board-header">
+                <p class="section-subtitle" data-i18n="event.title"></p>
+                <h2>Live Experiences</h2>
             </div>
-            <div class="activity fade-in">
-                <img src="/images/salong.jpg" alt="Image of the salon">
-                <div id="openQuiz">
-                    <h3 data-i18n="quiz.title"></h3>
-                    <p data-i18n="quiz.p"></p>
+            <div class="events-board-grid">
+                <!-- Event 1: Quiz -->
+                <div class="event-card fade-in" id="openQuiz">
+                    <div class="event-date">
+                        <span class="event-day">Tue</span>
+                        <span class="event-month">Weekly</span>
+                    </div>
+                    <img src="/images/salong.jpg" alt="Image of the salon" class="event-img">
+                    <div class="event-info">
+                        <div class="event-tags"><span class="event-tag">Quiz Night</span></div>
+                        <h3 data-i18n="quiz.title"></h3>
+                        <p data-i18n="quiz.p"></p>
+                    </div>
+                </div>
+
+                <!-- Event 2: Events -->
+                <div class="event-card fade-in" id="openEvent">
+                    <div class="event-date">
+                        <span class="event-day">17</span>
+                        <span class="event-month">May</span>
+                    </div>
+                    <img src="/images/event.png" alt="Table decorated for 17 May" class="event-img">
+                    <div class="event-info">
+                        <div class="event-tags"><span class="event-tag highlight">Special</span></div>
+                        <h3 data-i18n="event.title"></h3>
+                        <p data-i18n="event.p"></p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -213,7 +247,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://wa.me/0034650049726" target="_blank">
+                <a href="https://wa.me/34650049726" target="_blank">
                     <button class="whatsapp-btn">
                         <i class="fa fa-whatsapp"></i>
                         <span data-i18n="location.whatsapp"></span>
@@ -222,7 +256,7 @@
             </div>
             <div class="location-map fade-in-right">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3134.5!2d-0.7414!3d37.9258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63a99e1cb90b5d%3A0x8e5c7e25f32ae6a6!2sLa%20Luna%20Bar%20%26%20Restaurant!5e0!3m2!1sen!2ses!4v1711325000000!5m2!1sen!2ses"
+                    src="https://maps.google.com/maps?q=La%20Luna%20Bar%20%26%20Restaurant,%20C.%20de%20la%20Garza%2028,%2003189%20Orihuela,%20Alicante,%20Spain&t=&z=15&ie=UTF8&iwloc=&output=embed"
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
@@ -236,20 +270,20 @@
     <footer>
         <div class="footer-grid">
             <div class="footer-brand">
-                <a href="/index.html"><img src="/images/la luna w.png" alt="La Luna Logo"></a>
+                <a href="/"><img src="/images/la luna w.png" alt="La Luna Logo"></a>
                 <p data-i18n="footer.tagline"></p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/LaLunaLasMimosas" target="_blank" class="fa fa-facebook" aria-label="Facebook"></a>
                     <a href="https://www.instagram.com/la_luna_restaurante/" target="_blank" class="fa fa-instagram" aria-label="Instagram"></a>
-                    <a href="https://wa.me/0034650049726" target="_blank" class="fa fa-whatsapp" aria-label="WhatsApp"></a>
+                    <a href="https://wa.me/34650049726" target="_blank" class="fa fa-whatsapp" aria-label="WhatsApp"></a>
                 </div>
             </div>
             <div class="footer-col">
                 <h4 data-i18n="footer.quicklinks"></h4>
-                <a data-i18n="nav.home" href="/index.html"></a>
-                <a data-i18n="nav.menu" href="/menu.html"></a>
+                <a data-i18n="nav.home" href="/"></a>
+                <a data-i18n="nav.menu" href="/menu"></a>
                 <a class="openGolf" data-i18n="nav.golf"></a>
-                <a data-i18n="nav.podcast" href="/podcast.html"></a>
+                <a data-i18n="nav.podcast" href="/podcast"></a>
             </div>
             <div class="footer-col">
                 <h4 data-i18n="footer.opening.title"></h4>

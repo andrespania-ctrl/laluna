@@ -21,7 +21,7 @@ RUN npm install --omit=dev
 COPY --from=builder /app/dist ./dist
 
 # Copy static site assets
-COPY index.html menu.html podcast.html ./
+COPY index.html menu.html podcast.html admin.html ./
 COPY css/ ./css/
 COPY js/ ./js/
 COPY i18n/ ./i18n/

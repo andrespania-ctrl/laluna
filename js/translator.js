@@ -64,15 +64,18 @@ function changeFlag(lang) {
 
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const savedLang = localStorage.getItem('userLang') || 'no';
-    changeFlag(savedLang);
+    // 1. Load translations (this handles auto-detection on first visit)
+    const translations = await loadLanguageData();
+    
+    // 2. Now that auto-detection has run, get the valid language
+    const activeLang = localStorage.getItem('userLang') || 'en';
+    changeFlag(activeLang);
+
+    // 3. Apply translations
+    applyTranslations(translations);
 
     const selectButton = document.getElementById("languageSwitcher");
     const langOptions = document.getElementById("langOptions");
-
-    const translations = await loadLanguageData();
-    applyTranslations(translations);
-
     const langSelector = document.getElementById("langSelector");
 
     let hideTimeout = null;
